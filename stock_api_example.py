@@ -17,7 +17,7 @@ req.add_header('Content-Type','application/json')
 
 #create some data for the request - this is a 'read' operation on the default table, 'stockdata'
 #the ticker is the stock ticker, in format EXCHANGE/TICKER
-#the date is in the format of time-since-epoch integers
+#the date is in the format of YYYYMMDD
 #other operations include 'update' and 'create'
 
 data = { "operation":"read","tableRow" :{ "ticker" : "NASDAQ/MSFT", "date": 1, } }
